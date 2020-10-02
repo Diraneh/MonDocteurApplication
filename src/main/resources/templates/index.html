@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Connexion</title>
+
+    <!-- Main stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-blue4">
+<div id="co-div-main" class="co-main">
+    <div id="co-title-div" class="co-title font-blue2">
+        <br>
+        HEALTHCARE APP
+    </div>
+
+    <div id="co-login-div" class="co-login font-blue1">
+        <form method="post" th:action="@{/connect}">
+            <label for="co-username">Nom d'utilisateur</label><br>
+            <input id="co-username" th:name="username" type="text" th:placeholder="ArthurM"><br><br>
+            <label for="co-password">Mot de passe</label><br>
+            <input id="co-password" th:name="password" type="password"><br><br>
+            <input id="co-submit" name="co-submit" type="submit" value="Connexion"><br>
+        </form>
+    </div>
+
+    <div id="co-reset-div" class="co-reset font-blue1">
+        <p>En cas d'oubli de votre mot de passe, vous pouvez le réinitialiser en cliquant sur le lien ci-dessous</p>
+        <a id="co-reset-btn" class="font-blue2" th:href="@{/password/forgot}">Mot de passe oublié?</a>
+        <br>
+        <p>Si vous souhaitez créer un compte cliquer sur le lien ci-dessous</p>
+        <a id="co-reset-btn2" class="font-blue2" th:href="@{/account/create}">Créer un compte</a>
+    </div>
+</div>
+</body>
+
+</html>

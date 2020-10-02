@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:th="http://www.thymeleaf.org">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Healthcare App - Delete</title>   <!-- Main stylesheet -->
+   <link href="/css/homepage.css" rel="stylesheet">
+</head>
+<body><header>
+   <header-font>HealthCare APP</header-font>
+</header>
+<div class="topnav">
+
+	<nav id="navigation">
+		<ul>
+			<a  th:href="@{/homepage}">Accueil</a>
+			<a th:href="@{/allnews}">Actualités</a>
+      		<a href="../suggest/news">Suggérer un article </a>
+			<a href="#">Conseils</a>
+			<a href="#">Alertes individuelles </a>
+			<a href="#">Sessions Live</a>
+			<a href="#">Médiathèque </a>
+			<a href="#">Poser une question </a>
+      		<a href="./physician">Enregistrer un patient </a>
+			<a class="active" href="./delete">Supprimer votre compte </a>
+		</ul>
+	</nav>
+</div>
+
+​<div class="news">
+	<h1>Voulez-vous vraiment supprimer votre compte?</h1>
+ <form method="post" th:action="@{/account/delete}" th:object="${user}">
+                  <input type="submit" value="Supprimer" class="btn btn-danger" />
+ </form>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<footer>
+	<div class="footer-main">
+		<div class="footer-menu">
+			<ul>
+				<li><a th:href="@{/homepage}">Accueil</a></li>
+				<li><a th:href="@{/allnews}" aria-disabled="true">Actualités</a></li>
+				<li><a href="#" aria-disabled="true">Conseils</a></li>
+				<li><a href="#" aria-disabled="true">Alertes individuelles</a></li>
+				<li><a href="#" aria-disabled="true">Sessions Live</a></li>
+				<li><a href="#" aria-disabled="true">Médiathèque</a></li>
+				<li><a href="#" aria-disabled="true">Poser une question</a></li>
+				<li><a th:href="@{/account/physician}">Enregistrer un patient </a></li>
+				<li><a th:href="@{/account/delete}">Supprimer votre compte </a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<ul>
+				<h3> Contact  </h3>
+				<li>Tel: 03.41.25.89.67</li>
+				<li>Email:Healthcare@healthcare.com</li>
+				<li>Healthcare Helper - 67000 Strasbourg - 254 Avenue de Colmar</li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<h3> &copy Mentions légales</h3>
+			<p>  Ce site est destiné au grand public, aux professionnels de santé, et, de  manière générale,
+				à toute personne recherchant, dans le cadre de ses activités professionnelles ou à titre personnel,
+				des informations dans le domaine de la santé publique.</p>
+
+		</div>
+	</div>
+</footer>
+
+</body>
+
+
+</html>

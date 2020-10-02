@@ -1,0 +1,125 @@
+.co-main{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.co-login {
+    grid-area: 3 / 2 / 5 / 4;
+}
+
+.co-reset{
+    grid-area: 3 / 4 / 5 / 5;
+    text-align: left;
+}
+
+.co-title{
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.account-creation-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.account-creation-title {
+    grid-area: 1 / 2 / 2 / 4;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.account-creation-form-label {
+    grid-area: 2 / 2 / 4 / 3;
+    font-size: 20px;
+}
+
+.account-creation-form-input {
+    grid-area: 2/ 3 / 4 / 4;
+    font-size: 20px;
+}
+
+.forgotpwd-main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.forgotpwd-title {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.forgotpwd-form {
+    grid-area: 3 / 2 / 5 / 5;
+}
+
+.resetpwd-main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.resetpwd-title {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.resetpwd-form {
+    grid-area: 3 / 2 / 5 / 5;
+}
+
+.bg-blue1{
+    background-color: #E1ECF9;
+}
+
+.bg-blue2{
+    background-color: #609ce1;
+}
+
+.bg-blue3{
+    background-color: #236ab9;
+}
+
+.bg-blue4{
+    background-color: #133863;
+}
+
+.bg-blue5{
+    background-color: #091D34;
+}
+
+.font-blue1{
+    color: #E1ECF9;
+}
+
+.font-blue2{
+    color: #609ce1;
+}
+
+.font-blue3{
+    color: #236ab9;
+}
+
+.font-blue4{
+    color: #133863;
+}
+
+.font-blue5{
+    color: #091D34;
+}

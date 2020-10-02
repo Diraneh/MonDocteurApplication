@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Création compte</title>
+
+    <!-- Main stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-blue1 font-blue3">
+<div id="account-creation-main-div" class="account-creation-main">
+    <div class="account-creation-title">
+        Formulaire de création de compte
+    </div>
+
+    <div class="account-creation-form-label">
+        <label for="account-creation-lastname">Nom :</label><br><br>
+        <label for="account-creation-firstname">Prénom :</label><br><br>
+        <label for="account-creation-username">Nom d'utilisateur :</label><br><br>
+        <label for="account-creation-email">Adresse e-mail :</label><br><br>
+        <label for="account-creation-password">Mot de passe :</label><br><br>
+        <label for="account-creation-news-letter">Souhaitez-vous vous abonner à la newsletter ?</label><br><br>
+
+
+
+
+    </div>
+
+    <div class="account-creation-form-input" >
+        <form method="post" th:action="@{/account/create}" th:object="${user}">
+            <input th:field="*{lastname}" id="account-creation-lastname" name="account-creation-lastname" placeholder="Votre nom" type="text"><br><br>
+            <input th:field="*{firstname}" id="account-creation-firstname" name="account-creation-firstname" placeholder="Votre prénom" type="text"><br><br>
+            <input th:field="*{username}" id="account-creation-username" name="account-creation-username" placeholder="ArthurM" type="text"><br><br>
+            <input th:field="*{email}" id="account-creation-email" name="account-creation-email" placeholder="arthur.martin@yahoo.fr" type="email"><br><br>
+            <input th:field="*{password}" id="account-creation-password" name="account-creation-password" type="password"><br><br>
+            <input th:field="*{subscriber}" id="account-creation-news-letter" name="account-creation-news-letter"  type="radio" value="true"><label for="oui">Oui</label>
+            <input th:field="*{subscriber}"  id="account-creation-news-letter" name="account-creation-news-letter"  type="radio" value="false"><label for="non">Non</label>
+            <br><br>
+            <input id="account-creation-submit" name="account-creation-submit" type="submit" value="Créer mon compte">
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

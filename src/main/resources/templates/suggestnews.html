@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App</title>    <!-- Main stylesheet -->
+    <link href="/css/homepage.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue1 font-blue3">
+<header>
+    <header-font>HealthCare APP</header-font>
+</header>
+<div class="topnav">
+    <nav id="navigation">
+        <ul>
+            <a th:href="@{/homepage}">Accueil</a>
+            <a th:href="@{/allnews}">Actualités</a>
+            <a class="active" th:href="@{/suggest/news}">Suggérer un article </a>
+            <a href="#">Conseils</a>
+            <a href="#">Alertes individuelles </a>
+            <a href="#">Sessions Live</a>
+            <a href="#">Médiathèque </a>
+            <a href="#">Poser une question </a>
+            <a th:href="@{/account/physician}">Enregistrer un patient </a>
+            <a th:href="@{/account/delete}">Supprimer votre compte </a>
+        </ul>
+    </nav>
+</div>
+<div id="account-creation-main-div" class="news">
+    <h1>Suggérer un article</h1>
+        <form action="#" method="post" th:action="@{/suggest/news}"
+              th:object="${news}">
+            <label for="account-creation-title">Titre :</label><br><br>
+            <textarea th:field="*{title}" id="account-creation-title" name="account-creation-title" rows="1" cols="85" maxlength="400"></textarea><br><br>
+            <label for="account-creation-abs">Court résumé :</label><br><br>
+            <textarea th:field="*{abs}" id="account-creation-abs" name="account-creation-abs" rows="2" cols="85" maxlength="400"></textarea><br><br>
+            <label for="account-creation-body">Article :</label><br><br>
+            <textarea th:field="*{body}" id="account-creation-body" name="account-creation-body" rows="20" cols="85" maxlength="10000"></textarea><br><br>
+            <input id="account-creation-submit" name="account-creation-submit" type="submit" value="Envoyer">
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer-main">
+        <div class="footer-menu">
+            <ul>
+                <li><a th:href="@{/homepage}">Accueil</a></li>
+                <li><a th:href="@{/allnews}" aria-disabled="true">Actualités</a></li>
+                <li><a href="#" aria-disabled="true">Conseils</a></li>
+                <li><a href="#" aria-disabled="true">Alertes individuelles</a></li>
+                <li><a href="#" aria-disabled="true">Sessions Live</a></li>
+                <li><a href="#" aria-disabled="true">Médiathèque</a></li>
+                <li><a href="#" aria-disabled="true">Poser une question</a></li>
+                <li><a th:href="@{/account/physician}">Enregistrer un patient </a></li>
+                <li><a th:href="@{/account/delete}">Supprimer votre compte </a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <h3> Contact  </h3>
+                <li>Tel: 03.41.25.89.67</li>
+                <li>Email:Healthcare@healthcare.com</li>
+                <li>Healthcare Helper - 67000 Strasbourg - 254 Avenue de Colmar</li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <h3> &copy Mentions légales</h3>
+            <p>  Ce site est destiné au grand public, aux professionnels de santé, et, de  manière générale,
+                à toute personne recherchant, dans le cadre de ses activités professionnelles ou à titre personnel,
+                des informations dans le domaine de la santé publique.</p>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>

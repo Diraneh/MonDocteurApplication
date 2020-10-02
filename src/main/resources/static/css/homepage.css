@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1ECF9;
+}
+
+header{
+	display: flex;
+	height: 150px;
+    background-color: #133863;
+    background-image: url(../img/header4.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+    background-size:100%;
+}
+
+header-font {
+    margin: 4%;
+    padding-left: 40px;
+    font-size:60px;
+    font-weight:bolder;
+    color:white;
+}
+
+h1{
+    text-align: left;
+    color: #609CE1;
+}
+
+h3{
+    text-align: left;
+    color: #609CE1;
+}
+
+a.nounderline:link{
+    text-decoration: none;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #091D34;
+}
+
+.topnav a {
+	float: left;
+	color: #609CE1;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+	background-color: #E1ECF9;
+	color: #091D34;
+}
+
+.topnav a.active {
+	background-color: #236AB9;
+	color: white;
+}
+
+
+.home-grid-main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 300px);
+}
+
+.home-grid-element {
+	margin: 10px;
+	padding: 20px;
+    background-color: #609CE1;
+    background-image: url(../img/grid2.jpg);
+}
+
+home-grid-text{
+    padding: 10px;
+    color: white;
+    font-size:30px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.account-deletion-title {
+    padding: 10px;
+    color: #236ab9;
+    font-size:30px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.footer-main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    color: #609CE1;
+	background-color:#091D34;
+}
+
+.footer-menu {
+	margin: 10px;
+	padding: 10px;
+}
+
+.footer-menu a{
+    color:#609CE1;
+}
+
+.news{
+    width: 600px;
+    padding: 15px 40px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/*
+  input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016bc1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: #0165b6;
+  }*/
